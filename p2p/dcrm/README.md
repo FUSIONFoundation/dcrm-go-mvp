@@ -1,9 +1,3 @@
-# Author: huangweijun
-# Date: 20180808
-
-### make
-* ./build/env.sh go build go-ethereum/p2p/dcrmtest.go
-
 ### FILE
 go-ethereum/p2p/dcrm/dcrm.go
 go-ethereum/p2p/dcrmtest.go
@@ -17,19 +11,20 @@ go-ethereum/p2p/dcrmtest.go
 ### DEMO
   dcrmtest.go
 
+### make
+  ./build/env.sh go build go-ethereum/p2p/dcrmtest.go
+
 ### Usage
 * bootnode
-    Infomation: test server peer
-    # bootnode -genkey bootnode.key
-    # bootnode -nodekey=bootnode.key
-    enode://fa6b16e6a9a1e772fa04f129c1149b7804cd79d4b335b8d19eaf6c5fbb5e9c5e45a7308ba4ebf37dffbcfe1627ce7231f6ce1e10d1080bc0a42147c199ba2fa6@101.132.45.75:8008
+     1) bootnode -genkey bootnode.key
+     2) bootnode -nodekey=bootnode.key
     
 * run more than two peers to test
     (--port must different)
     1) run peer1
-      ./dcrmtest --port 3401 --bootnode enode://fa6b16e6a9a1e772fa04f129c1149b7804cd79d4b335b8d19eaf6c5fbb5e9c5e45a7308ba4ebf37dffbcfe1627ce7231f6ce1e10d1080bc0a42147c199ba2fa6@101.132.45.75:8008
+      ./dcrmtest --port 3401 --bootnode enode://[bootnode.enodes]@[:::]:30301
     2) run peer2
-      ./dcrmtest --port 3402 --bootnode enode://fa6b16e6a9a1e772fa04f129c1149b7804cd79d4b335b8d19eaf6c5fbb5e9c5e45a7308ba4ebf37dffbcfe1627ce7231f6ce1e10d1080bc0a42147c199ba2fa6@101.132.45.75:8008
+      ./dcrmtest --port 3402 --bootnode enode://[bootnode.enodes]@[:::]:30301
 
    
 ### Problem: NAT
