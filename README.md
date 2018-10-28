@@ -8,7 +8,7 @@ To learn more about DCRM, please read the [FUSION DCRM Yellow Paper.pdf](https:/
 
 ## 1. Release info 
 
-**FUSION DCRM-v3.0** refactoring with go language. it build a distributed DCRM verification network based on P2P network. it offer RPC api to generate the distributed generation of private keys, public keys and transaction signatures which support crosschain with bitcoin and ethereum. Users can test DCRM 3.0 with the poc light wallet demo https://dcrm.network/ .
+**FUSION DCRM-v3.0** refactoring with go language. it build a distributed DCRM verification network based on P2P network. it offer RPC api to generate the distributed generation of private keys, public keys and transaction signatures which support crosschain with bitcoin and ethereum, test DCRM 3.0 with the [light wallet demo](https://dcrm.network/) .
 
 **FUSION DCRM-v2.0** is a java implementation. it build multiple virtual users locally to demonstrate how to complete the distributed execution of the DCRM. On the basis of the previous version, the new version completes a transfer transaction signature for assets controlled by distributed private key, and generates the RAW transaction. By broadcasting the original transaction to the target main chain, the user can transfer these assets, thus making the user have a more intuitive experience of dcrm technology.This release shows the DCRM technology's support for Ethereum. 
 
